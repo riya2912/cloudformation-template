@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "creating S3 bucket"
+Resources:
+  S3bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: "demo.riya.cft"
+      VersioningConfiguration:
+        Status: Enabled
